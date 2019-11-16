@@ -12,8 +12,10 @@ using System.Web;
 public class SubMenuDAL
 {
     DataUtilities objUtilities = new DataUtilities();
-    public DataSet GetSubMenuDetails()
+    public DataSet GetSubMenuDetails(int SubMenuID)
     {
-        return objUtilities.ExecuteDataSet("GetSubMenuDetails");
+        Hashtable ht = new Hashtable();
+        ht.Add("@SubMenuID", SubMenuID);
+        return objUtilities.ExecuteDataSet("GetSubMenuDetails",ht);
     }
 }
