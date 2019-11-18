@@ -60,7 +60,8 @@
                                     <img alt="Image" src="images/Yatra-01.png" /></a>
                             </div>
                             <div id="navbar" class="navbar-nav-wrapper pull-right">
-                                <ul class="nav navbar-nav" id="responsive-menu">
+                                  <asp:Panel ID="Panel1" runat="server" Width="913px" Style="margin: 0px"></asp:Panel>
+                                <%--<ul class="nav navbar-nav" id="responsive-menu">
                                     <li class="active">
                                         <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
                                         <ul>
@@ -167,7 +168,7 @@
                                             <li><a href="blog-detail-fw.html">Blog Detail Fullwidth</a></li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul>--%>
                             </div>
                             <!--/.nav-collapse -->
                             <div id="slicknav-mobile"></div>

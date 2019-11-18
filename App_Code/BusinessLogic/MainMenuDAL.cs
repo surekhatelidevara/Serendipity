@@ -19,4 +19,10 @@ public class MainMenuDAL
         ht.Add("@MainMenuID",MainMenuID);
         return objUtilities.ExecuteDataSet("GetMainMenuDetails", ht);
     }
+    public DataSet GetSubMenuForMain(int MainMenuID)
+    {
+        Hashtable ht = new Hashtable();
+        ht.Add("@MainMenuID", MainMenuID);
+        return objUtilities.ExecuteDataSet("GetSubMenuForMain", ht);
+    }
 }
